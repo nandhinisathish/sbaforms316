@@ -35,25 +35,28 @@ legend{
     font-weight: 300;
 }
 
-.userDetails{
+.userDetailsGrp{
     display: flex;
     flex-direction: column;
     font-size: 2rem;
     padding: 20px;
     background-color: #9dd4a7;
 }
-.userDetails label{
+.userDetailsGrp label{
     margin-top: 10px;
 }
 
-.userDetails input{
+.userDetailsGrp input{
     margin-top: 10px;
     border-radius: 5px;
     padding: 10px;
     font-size: 25px;
    
 }
-button{
+#userform button{
+    margin: 10px, auto;
+    width: 100%;
+    align-items: center;
     border-radius: 5px;
     padding: 10px;
     font-size: 1.5rem;

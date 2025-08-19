@@ -15,6 +15,6 @@ form.addEventListener('submit', (e) => {
 })
 
 function validateUserInputs() {
-    // username = username.value;
-    console.log(`username - ${username[0]}`);
+    const uName = username.value;
+    console.log(`username - ${uName}`);
 }
