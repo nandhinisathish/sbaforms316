@@ -1,10 +1,20 @@
-let form = document.getElementById('userForm');
-let username = document.getElementById('username');
-let password = document.getElementById('password');
-let confirmPwd = document.getElementById('confirmPwd');
-let email = document.getElementById('email');
-let city = document.getElementById('city');
-let phone = document.getElementById('phone');
+const form = document.getElementById('userform');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+const confirmPwd = document.getElementById('confirmPwd');
+const email = document.getElementById('email');
+const city = document.getElementById('city');
+const phone = document.getElementById('phone');
 let registerBtn = document.querySelector('button');
 
-alert(`username - ${username}`);
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    validateUserInputs();
+})
+
+function validateUserInputs() {
+    // username = username.value;
+    console.log(`username - ${username[0]}`);
+}
