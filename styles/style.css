@@ -25,14 +25,12 @@ form {
     border: 10px;
     border-radius: 5px;
     top: auto;
-    padding: 400px;
+    padding: 200px;
     
     /* background-color: blueviolet; */
 
 }
-fieldset{
-   min-width: 0;
-}
+
 legend{
     text-align: center;
     font-size: 2.5rem;
@@ -78,4 +76,5 @@ legend{
     font-size: 1.5rem;
     color: rgb(35, 47, 47);
     background-color: rgb(191, 155, 77);
+    margin-top: 10px;
 }
