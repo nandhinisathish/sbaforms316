@@ -11,10 +11,31 @@ let registerBtn = document.querySelector('button');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    validateUserInputs();
+    validateUserInputs(e);
 })
 
 function validateUserInputs() {
     const uName = username.value;
     console.log(`username - ${uName}`);
+    if (uName === "") {
+        onFailed(username, "Username cannot be spaces")
+    }else{
+        onSuccess(username);
+    }
+}
+
+function onFailed(el, msg) {
+    const parentElement = el.parentElement;
+    const displayError = parentElement.querySelector('span')
+    displayError.innerText = msg;
+    parentElement.classList.add('error');
+    parentElement.classList.remove('success');
+
+}
+
+function onSuccess(el) {
+    const parentElement = el.parentElement;
+    const displayError = parentElement.lastElementchild;
+    parentElement.classList.remove('success');
+    parentElement.classList.add('error');
 }

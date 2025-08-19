@@ -19,15 +19,19 @@ html {
 form {
     /* display: flex; */
     justify-content: center;
-    margin: 10vh;
+    /* margin: 1vh; */
     color: azure;
     flex-direction: column;
     border: 10px;
     border-radius: 5px;
-    padding: 30px;
+    top: auto;
+    padding: 400px;
     
     /* background-color: blueviolet; */
 
+}
+fieldset{
+   min-width: 0;
 }
 legend{
     text-align: center;
@@ -39,7 +43,7 @@ legend{
     display: flex;
     flex-direction: column;
     font-size: 2rem;
-    padding: 20px;
+    padding: 10px;
     background-color: #9dd4a7;
 }
 .userDetailsGrp label{
@@ -52,6 +56,18 @@ legend{
     padding: 10px;
     font-size: 25px;
    
+}
+.error span{
+    color: red;
+    font-size: 20px;
+
+}
+/* .userDetailsGrp.error input{
+    border-color: red;
+} */
+
+.userDetailsGrp.success input{
+    border-color: green;
 }
 #userform button{
     margin: 10px, auto;
